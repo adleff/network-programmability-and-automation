@@ -1,7 +1,7 @@
 from jinja2 import Environment, FileSystemLoader
 
 ENV = Environment(loader=FileSystemLoader('.'))
-template = ENV.get_template("template.j2")
+template = ENV.get_template("template1.j2")
 
 class NetworkInterface(object):
 
