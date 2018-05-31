@@ -1,8 +1,8 @@
 interface {{ interface.name }}
  description {{ interface.description }}
-  {% if interface.uplink %}
+{% if interface.uplink %}
  switchport mode trunk
-  {% else %}
+{% else %}
  switchport access vlan {{ interface.vlan }}
  switchport mode access
-  {% endif %}
+{% endif %}
